@@ -1,0 +1,286 @@
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #333;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-img {
+    width: 1200px;
+    padding-top: 76px;
+}
+
+.main-img-text {
+    width: 458px;
+    height: 352px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 23px;
+}
+
+.main-img-mask {
+    height: 57px;
+}
+
+.container {
+    /* для оформления схемы */
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.feature-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.feature-title-header {
+    margin-bottom: 39px;
+    font-weight: bold;
+    font-size: 21px;
+    color: #000;
+}
+
+.features-item {
+    float: left;
+    width: 400px;
+    min-height: 256px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.features-img {
+    float: left;
+    width: 800px;
+    height: 256px;
+}
+
+.feature-section p {
+    line-height: 21px;
+}
+
+.features-section {
+    float: left;
+    width: 400px;
+    text-align: center;
+}
+
+.features-item-header,
+.features-section-header {
+    font-weight: bold;
+    font-size: 21px;
+    color: #000;
+}
+
+.features-item-header {
+    line-height: normal;
+}
+
+.features-section-header {
+    line-height: 26px;
+}
+
+.offer {
+    text-align: center;
+}
+
+.offer-header {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: normal;
+    color: #000;
+}
+
+.offer p {
+    line-height: 24px;
+}
+
+.map {
+    min-height: 607px;
+}
+
+.mf-layout-column {
+    float: left;
+    width: 400px;
+    /* для оформления схемы */
+    min-height: 120px;
+}
+
+.mf-hashtag,
+.mf-socials,
+.mf-copyright {
+    /* для оформления схемы */
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+p,
+h1,
+h2,
+h3,
+h4,
+span {
+    outline: 2px solid cadetblue;
+}
+
+.gl00,
+.gl0,
+.gl1,
+.gl2,
+.gl3 {
+    position: relative;
+}
+
+.gl00:before,
+gl0:before,
+.gl1:before,
+.gl2:before,
+.gl3:before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    height: 20px;
+    padding: 2px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: "Courier New", monotype;
+    white-space: nowrap;
+}
+
+.gl00 {
+    outline: 2px solid orange;
+}
+
+.gl00:before {
+    color: #fff;
+    background: orange;
+}
+
+.gl0 {
+    outline: 2px solid blue;
+    background: rgba(0, 0, 255, .1);
+    margin-bottom: 30px;
+}
+
+.gl0:before {
+    color: #fff;
+    background: rgba(0, 0, 255, .9);
+}
+
+.gl1 {
+    outline: 2px solid green;
+    background: rgba(0, 128, 0, .1);
+}
+
+.gl1:before {
+    color: #fff;
+    background: rgba(0, 128, 0, .9);
+}
+
+.gl2 {
+    outline: 2px solid rgb(255, 45, 82);
+    background: rgba(255, 45, 82, .1);
+}
+
+.gl2:before {
+    color: #fff;
+    background: rgba(255, 45, 82, .9);
+}
+
+.gl3 {
+    outline: 2px solid rgb(234, 255, 45);
+    background: rgba(234, 255, 45, .1);
+}
+
+.gl3:before {
+    color: #000;
+    background: rgba(234, 255, 45, .8);
+}
+
+.gl4:before {
+    color: #000;
+    background: cadetblue;
+}
+
+.main-container::before {
+    content: ".main-conteiner";
+}
+
+.main-menu::before {
+    content: ".main-menu";
+}
+
+.main-img::before {
+    content: ".main-img";
+}
+
+.main-img-text::before {
+    content: ".main-img-text";
+}
+
+.features::before {
+    content: ".features";
+}
+
+.container::before {
+    content: ".container";
+}
+
+.feature-title::before {
+    content: ".feature-title";
+}
+
+.features-item::before {
+    content: ".features-item";
+}
+
+.features-img::before {
+    content: ".features-img";
+}
+
+.features-section::before {
+    content: ".features-section";
+}
+
+.features-row::before {
+    content: ".features-row";
+}
+
+.offer::before {
+    content: ".offer";
+}
+
+.main-footer::before {
+    content: ".main-footer";
+}
+
+.mf-layout-column::before {
+    content: ".mf-layout-column";
+}
+
+.map::before {
+    content: ".map";
+}
+
+.main-img-mask::before {
+    content: ".main-img-mask";
+}
