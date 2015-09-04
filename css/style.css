@@ -17,6 +17,29 @@ body {
     margin: 0 auto;
 }
 
+
+/*------------------main-menu------------------*/
+
+.main-menu ul {
+    font-size: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+    background-color: #fff;
+    width: 240px;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.mm-item {
+    display: block;
+}
+
+
+/*----------------------index.html----------*/
+
 .main-img {
     width: 1200px;
     padding-top: 76px;
@@ -34,7 +57,7 @@ body {
     height: 57px;
 }
 
-.container {
+.index-layout-row {
     /* для оформления схемы */
     margin-bottom: 30px;
     padding-top: 30px;
@@ -67,7 +90,7 @@ body {
     height: 256px;
 }
 
-.feature-section p {
+.features-section p {
     line-height: 21px;
 }
 
@@ -118,12 +141,164 @@ body {
     min-height: 120px;
 }
 
-.mf-hashtag,
-.mf-socials,
-.mf-copyright {
+
+/*----------------hotels.html-----------------*/
+
+.container {
+    width: 1056px;
+    margin: 0 auto;
     /* для оформления схемы */
-    padding-top: 50px;
-    padding-left: 50px;
+    margin-bottom: 30px;
+}
+
+
+/*----main-filter-----------------------------*/
+
+.main-filter {
+    padding-top: 30px;
+}
+
+.main-filter-list {
+    float: left;
+    width: 240px;
+    margin-right: 10px;
+}
+
+.main-filter-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-filter-col-right {
+    float: right;
+    width: 330px;
+}
+
+.main-filter-range {
+    width: 328px;
+}
+
+.main-filter-btn-output {
+    text-align: center;
+}
+
+.price-range {
+    text-align: center;
+}
+
+input[id="price-from"],
+input[id="price-to"] {
+    width: 60px;
+}
+
+
+/*-----------output-options----------------------*/
+
+.output-options {
+    line-height: 86px;
+    min-height: 86px;
+}
+
+.output-options-col-left {
+    float: left;
+    width: 800px;
+}
+
+.output-options-col-right {
+    float: right;
+    width: 200px;
+}
+
+.output-options-item {
+    vertical-align: middle;
+}
+
+.options-found {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.options-sort {
+    font-size: 12px;
+}
+
+.sort-by-btn {
+    font-size: 12px;
+}
+
+
+/*------------output-------------------------------*/
+
+.output-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.output-img {
+    float: left;
+    width: 135px;
+    height: 90px;
+    margin-right: 30px;
+}
+
+.output-info {
+    float: left;
+    width: 700px;
+}
+
+.output-info-row {
+    line-height: 30px;
+    min-height: 30px;
+}
+
+.output-info-item {
+    display: inline-block;
+}
+
+.output-title,
+.output-type,
+.output-price {
+    line-height: normal;
+    text-align: left;
+}
+
+.output-title {
+    margin: 0;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.output-btn {
+    line-height: normal;
+    vertical-align: bottom;
+}
+
+.output-type,
+.output-more {
+    min-width: 110px;
+    margin-right: 6px;
+}
+
+.output-rating-col {
+    float: right;
+}
+
+.output-rating-row {
+    float: right;
+    line-height: 30px;
+    min-height: 30px;
+}
+
+.output-rating {
+    text-align: right;
+}
+
+.output-stars {
+    width: 150px;
+    /* для оформления схемы */
+    min-height: 60px;
+    background-color: aqua;
+    outline: 2px solid cadetblue;
 }
 
 
@@ -136,7 +311,8 @@ h1,
 h2,
 h3,
 h4,
-span {
+span,
+a {
     outline: 2px solid cadetblue;
 }
 
@@ -149,7 +325,7 @@ span {
 }
 
 .gl00:before,
-gl0:before,
+.gl0:before,
 .gl1:before,
 .gl2:before,
 .gl3:before {
@@ -164,6 +340,16 @@ gl0:before,
     line-height: 20px;
     font-family: "Courier New", monotype;
     white-space: nowrap;
+}
+
+.gl0:before,
+.gl1:before,
+.gl2:before {
+    top: -20px;
+}
+
+.gl2:before {
+    left: 100px;
 }
 
 .gl00 {
@@ -229,58 +415,98 @@ gl0:before,
     content: ".main-menu";
 }
 
-.main-img::before {
+.main-img:before {
     content: ".main-img";
 }
 
-.main-img-text::before {
+.main-img-text:before {
     content: ".main-img-text";
 }
 
-.features::before {
+.features:before {
     content: ".features";
 }
 
-.container::before {
+.container:before {
     content: ".container";
 }
 
-.feature-title::before {
+.feature-title:before {
     content: ".feature-title";
 }
 
-.features-item::before {
+.features-item:before {
     content: ".features-item";
 }
 
-.features-img::before {
+.features-img:before {
     content: ".features-img";
 }
 
-.features-section::before {
+.features-section:before {
     content: ".features-section";
 }
 
-.features-row::before {
+.features-row:before {
     content: ".features-row";
 }
 
-.offer::before {
+.offer:before {
     content: ".offer";
 }
 
-.main-footer::before {
+.main-footer:before {
     content: ".main-footer";
 }
 
-.mf-layout-column::before {
+.mf-layout-column:before {
     content: ".mf-layout-column";
 }
 
-.map::before {
+.map:before {
     content: ".map";
 }
 
-.main-img-mask::before {
+.main-img-mask:before {
     content: ".main-img-mask";
+}
+
+.index-layout-row:before {
+    content: ".index-layout-row";
+}
+
+.main-filter-col-right:before {
+    content: ".main-filter-col-right";
+}
+
+.main-filter-list:before {
+    content: ".main-filter-list";
+}
+
+.output-item:before {
+    content: ".output-item";
+}
+
+.main-filter:before {
+    content: ".main-filter";
+}
+
+.output-options:before {
+    content: ".output-options";
+}
+
+.output:before {
+    content: ".output";
+}
+
+.output-options-col-left:before {
+    content: ".output-options-col-left";
+}
+
+.output-options-col-right:before {
+    content: ".output-options-col-right";
+}
+
+.output-stars:before {
+    content: ".output-stars";
 }
