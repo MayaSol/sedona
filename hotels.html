@@ -11,25 +11,31 @@
     <div class="main-container gl00">
 
         <header class="main-header">
-            <nav class="main-menu gl0">
-                <ul>
-                    <li>
-                        <a class="mm-item mm-item-left gl3" href="#">Информация</a>
-                    </li>
-                    <li>
-                        <a class="mm-item mm-item-left gl3" href="#">Фото и видео</a>
-                    </li>
-                    <li>
-                        <a class="mm-item logo gl3" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="mm-item mm-item-right gl3" href="#">Карта штата</a>
-                    </li>
-                    <li>
-                        <a class="mm-item mm-item-right gl3" href="#">Гостиницы</a>
-                    </li>
-                </ul>
+
+            <nav class="main-menu">
+
+                <div class="container clearfix">
+                    <ul>
+                        <li class="main-menu-col main-menu-col-left active">
+                            <a href="#">Информация</a>
+                        </li>
+                        <li class="main-menu-col main-menu-col-left">
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li class="main-menu-logo">
+                            <a href="index.html"></a>
+                        </li>
+                        <li class="main-menu-col main-menu-col-right">
+                            <a href="#">Гостиницы</a>
+                        </li>
+                        <li class="main-menu-col main-menu-col-right">
+                            <a href="#">Карта штата</a>
+                        </li>
+                    </ul>
+                </div>
+
             </nav>
+
         </header>
 
         <div class="main-filter gl0">
@@ -100,15 +106,19 @@
         <div class="output-options gl0">
             <div class="container clearfix gl1">
                 <div class="output-options-col-left gl2">
-                    <span class="output-options-item options-found">Найдено:3</span>
-                    <span class="output-options-item options-sort">Сортировка:</span>
-                    <a class="output-options-item sort-by-btn active" href="">По цене</a>
-                    <a class="output-options-item sort-by-btn" href="">По типу</a>
-                    <a class="output-options-item sort-by-btn" href="">По рейтингу</a>
+                    <div class="output-options-container">
+                        <span class="options-found">Найдено:3</span>
+                        <span class="options-sort">Сортировка:</span>
+                        <a class="sort-by-btn active" href="">По цене</a>
+                        <a class="sort-by-btn" href="">По типу</a>
+                        <a class="sort-by-btn" href="">По рейтингу</a>
+                    </div>
                 </div>
                 <div class="output-options-col-right gl2">
-                    <a class="output-options-item sort-asc-btn" href="">По возрастанию</a>
-                    <a class="output-options-item sort-desc-btn active" href="">По убыванию</a>
+                    <div class="output-options-container">
+                        <a class="sort-asc-btn" href="">По возрастанию</a>
+                        <a class="sort-desc-btn active" href="">По убыванию</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,7 +216,7 @@
         <footer class="main-footer clearfix gl0">
             <div class="mf-layout-column gl2">
                 <div class="mf-hashtag gl3">
-                    <a class="mf-hashtag">#visitsedona</a>
+                    <a class="mf-hashtag-link">#visitsedona</a>
                 </div>
             </div>
             <div class="mf-layout-column gl2">
@@ -218,8 +228,8 @@
             </div>
             <div class="mf-layout-column gl2">
                 <div class="mf-copyright gl3">
-                    <span>website by</span>
-                    <a class="website-by" href="#"></a>
+                    <span class="mf-copyright-text">website by</span>
+                    <a class="mf-copyright-link" href="#"></a>
                 </div>
             </div>
         </footer>
