@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sedona</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,7 +18,7 @@
                 <div class="container clearfix">
                     <ul>
                         <li class="main-menu-col main-menu-col-left active">
-                            <a href="#">Информация</a>
+                            <a href="index.html">Информация</a>
                         </li>
                         <li class="main-menu-col main-menu-col-left">
                             <a href="#">Фото и видео</a>
@@ -27,7 +27,7 @@
                             <a href="index.html"></a>
                         </li>
                         <li class="main-menu-col main-menu-col-right">
-                            <a href="#">Гостиницы</a>
+                            <a href="hotels.html">Гостиницы</a>
                         </li>
                         <li class="main-menu-col main-menu-col-right">
                             <a href="#">Карта штата</a>
@@ -96,7 +96,7 @@
             </div>
             <div class="features-item features-item-special">
                 <h2 class="features-item-header features-item-list-header">Там есть<br> мост дьявола</h2>
-                <div class="features-symbol">-№2-</div>
+                <div class="features-symbol">— №2 —</div>
                 <p>
                     Да, по нему можно пройти!
                     <br> Если конечно вы осмелитесь
@@ -107,7 +107,7 @@
         <div class="index-layout-row clearfix">
             <div class="features-item features-item-ordinary">
                 <h2 class="features-item-header features-item-list-header">Небольшая<br> площадь</h2>
-                <div class="features-symbol">-№3-</div>
+                <div class="features-symbol">— №3 —</div>
                 <p>
                     Все достопримеча-
                     <br> тельности находятся очень близко
@@ -115,7 +115,7 @@
             </div>
             <div class="features-item features-item-ordinary">
                 <h2 class="features-item-header features-item-list-header">Красивая<br> дорога</h2>
-                <div class="features-symbol">-№4-</div>
+                <div class="features-symbol">— №4 —</div>
                 <p>
                     Ехать в Седону из Лас-Вегаса совсем
                     <br> не скучно!
@@ -123,7 +123,7 @@
             </div>
             <div class="features-item features-item-ordinary">
                 <h2 class="features-item-header features-item-list-header">Мало<br> туристов</h2>
-                <div class="features-symbol">-№5-</div>
+                <div class="features-symbol">— №5 —</div>
                 <p>
                     Большинство едет в гранд каньон и
                     <br> толпится там
@@ -144,22 +144,35 @@
         <div class="map">
 
             <div class="offer-search">
-                <div class="offer-search-title">
-                    <h2>Поиск гостиницы в Седоне</h2>
-                </div>
+                <a class="offer-search-title" href="#">
+                    Поиск гостиницы в Седоне
+                </a>
                 <form class="offer-search-form">
-                    <label for="osf-date-in">Дата заезда:</label>
-                    <input type="text" name="osf-date-in" id="osf-date-in">
-                    <br>
-                    <label for="osf-date-out">Дата выезда:</label>
-                    <input type="text" name="osf-date-out" id="osf-date-out">
-                    <br>
-                    <label for="osf-adults">Взрослые:</label>
-                    <input type="text" name="osf-adults" id="osf-adults" value="2">
-                    <label for="osf-children">Дети:</label>
-                    <input type="text" name="osf-children" id="osf-children" value="0">
-                    <br>
-                    <input type="submit" name="osf-search-btn" value="Найти">
+                    <div class="osf-container clearfix">
+                        <label class="osf-label" for="osf-date-in">Дата заезда:</label>
+                        <input type="text" name="osf-date-in" id="osf-date-in" placeholder="24 апреля 2014">
+                        <button class="osf-btn osf-input-calendar icon-calendar" name="osf-date-in-calendar"></button>
+                    </div>
+                    <div class="osf-container clearfix">
+                        <label class="osf-label" for="osf-date-out">Дата выезда:</label>
+                        <input type="text" name="osf-date-out" id="osf-date-out" placeholder="4 июля 2014">
+                        <button class="osf-btn osf-input-calendar icon-calendar" name="osf-date-out-calendar"></button>
+                    </div>
+                    <div class="osf-container clearfix">
+                        <div class="osf-container-left">
+                            <label class="osf-label" for="osf-adults">Взрослые:</label>
+                            <button class="osf-btn osf-btn-minus icon-minus"></button>
+                            <input type="text" name="osf-adults" id="osf-adults" value="2">
+                            <button class="osf-btn osf-btn-plus icon-plus"></button>
+                        </div>
+                        <div class="osf-container-right">
+                            <label for="osf-children">Дети:</label>
+                            <button class="osf-btn osf-btn-plus icon-plus"></button>
+                            <input type="text" name="osf-children" id="osf-children" value="0">
+                            <button class="osf-btn osf-btn-minus icon-minus"></button>
+                        </div>
+                    </div>
+                    <a class="osf-search-btn" href="#">Найти</a>
                 </form>
             </div>
 
@@ -171,9 +184,9 @@
                 </div>
                 <div class="mf-layout-column">
                     <div class="mf-container">
-                        <a class="social-btn social-btn-tw" href="#"></a>
-                        <a class="social-btn social-btn-fb" href="#"></a>
-                        <a class="social-btn social-btn-yt" href="#"></a>
+                        <a class="social-btn social-btn-tw" href="#"><i class="icon-twitter"></i></a>
+                        <a class="social-btn social-btn-fb" href="#"><i class="icon-facebook"></i></a>
+                        <a class="social-btn social-btn-yt" href="#"><i class="icon-youtube"></i></a>
                     </div>
                 </div>
                 <div class="mf-layout-column">

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sedona</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,8 +18,8 @@
 
                 <div class="container clearfix">
                     <ul>
-                        <li class="main-menu-col main-menu-col-left active">
-                            <a href="#">Информация</a>
+                        <li class="main-menu-col main-menu-col-left">
+                            <a href="index.html">Информация</a>
                         </li>
                         <li class="main-menu-col main-menu-col-left">
                             <a href="#">Фото и видео</a>
@@ -27,8 +27,8 @@
                         <li class="main-menu-logo">
                             <a href="index.html"></a>
                         </li>
-                        <li class="main-menu-col main-menu-col-right">
-                            <a href="#">Гостиницы</a>
+                        <li class="main-menu-col main-menu-col-right active">
+                            <a href="hotels.html">Гостиницы</a>
                         </li>
                         <li class="main-menu-col main-menu-col-right">
                             <a href="#">Карта штата</a>
@@ -43,7 +43,6 @@
         <div class="main-filter">
             <div class="container clearfix">
                 <form class="form-main-filter" action="echo/" method="post">
-
 
                     <div class="main-filter-list">
                         <div class="main-filter-title mf-list-title">Инфраструктура:</div>
@@ -84,22 +83,26 @@
                     <div class="main-filter-col-right">
                         <div class="main-filter-range">
                             <div class="main-filter-title mf-range-title">Стоимость в сутки (р):</div>
-                            <div class="mf-price-range">
+                            <div class="mf-price-controls">
                                 <div class="mf-price mf-price-from">
-                                    <span>от 0</span>
+                                    <label for="mf-price-from">от</label>
+                                    <input type="text" name="mf-price-from" id="mf-price-from" value="0">
                                 </div>
                                 <div class="mf-price mf-price-to">
-                                    <span>до 3000</span>
+                                    <label for="mf-price-to">до</label>
+                                    <input type="text" name="mf-price-to" id="mf-price-to" value="2000">
                                 </div>
                             </div>
-                            <div class="scale">
-                                <div class="bar"></div>
+                            <div class="mf-range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle min-toggle"></div>
+                                <div class="toggle max-toggle"></div>
                             </div>
-                            <div class="toggle min-toggle"></div>
-                            <div class="toggle max-toggle"></div>
                         </div>
                         <div class="main-filter-btn-output">
-                            <button name="main-filter-btn-output">Показать</button>
+                            <button class="btn" type="submit">Показать</button>
                         </div>
                     </div>
                 </form>
@@ -119,8 +122,8 @@
                 </div>
                 <div class="output-options-col-right">
                     <div class="output-options-container">
-                        <a class="options-item sort-asc-btn" href="">По возрастанию</a>
-                        <a class="options-item sort-desc-btn active" href="">По убыванию</a>
+                        <a class="output-options-item sort-up-down-btn active" href=""><i class="icon-up-dir"></i></a>
+                        <a class="output-options-item sort-up-down-btn" href=""><i class="icon-down-dir"></i></a>
                     </div>
                 </div>
             </div>
@@ -148,7 +151,7 @@
                         </div>
                     </div>
                     <div class="output-rating-col">
-                        <div class="output-stars"></div>
+                        <div class="output-stars output-stars-4"></div>
                         <div class="output-rating-row">
                             <span class="output-info-item output-btn output-rating">Рейтинг: 8,5</span>
                         </div>
@@ -177,7 +180,7 @@
                         </div>
                     </div>
                     <div class="output-rating-col">
-                        <div class="output-stars"></div>
+                        <div class="output-stars output-stars-2"></div>
                         <div class="output-rating-row">
                             <span class="output-info-item output-btn output-rating">Рейтинг: 8,9</span>
                         </div>
@@ -207,7 +210,7 @@
                     </div>
 
                     <div class="output-rating-col">
-                        <div class="output-stars"></div>
+                        <div class="output-stars output-stars-3"></div>
                         <div class="output-rating-row">
                             <span class="output-info-item output-btn output-rating">Рейтинг: 9,2</span>
                         </div>
@@ -227,9 +230,9 @@
             </div>
             <div class="mf-layout-column">
                 <div class="mf-container">
-                    <a class="social-btn social-btn-tw" href="#"></a>
-                    <a class="social-btn social-btn-fb" href="#"></a>
-                    <a class="social-btn social-btn-yt" href="#"></a>
+                    <a class="social-btn social-btn-tw" href="#"><i class="icon-twitter"></i></a>
+                    <a class="social-btn social-btn-fb" href="#"><i class="icon-facebook"></i></a>
+                    <a class="social-btn social-btn-yt" href="#"><i class="icon-youtube"></i></a>
                 </div>
             </div>
             <div class="mf-layout-column">
