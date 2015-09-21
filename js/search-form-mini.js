@@ -1,0 +1,1 @@
+var link=document.querySelector(".offer-search-title"),form=document.querySelector(".offer-search-form"),date_in=form.querySelector("[name=osf-date-in]");link.addEventListener("click",function(e){e.preventDefault(),form.classList.toggle("osf-show"),date_in.focus()});
