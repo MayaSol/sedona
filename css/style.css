@@ -796,7 +796,11 @@ label[for="osf-children"] {
     content: "\2611";
 }
 
-.mfl-checkbox:disabled + label:before {
+
+
+.mfl-checkbox:disabled + label:before,
+.mfl-checkbox:disabled + label:hover:before
+{
     color: #6a6a6a;
 }
 
